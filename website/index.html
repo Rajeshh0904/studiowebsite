@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo and Video Studio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2E3192, #1bffff);
+        }
+
+        header {
+            background-color: linear-gradient(to bottom, #1bffff,#2E3192);
+            color: #000000;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.5); 
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0000009f;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .media {
+            margin: 20px;
+            text-align: center;
+            background: #ffffffa4;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .media:hover {
+            transform: scale(1.05);
+        }
+
+        .media-item {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .media-title {
+            margin: 10px;
+            font-size: 1.5em;
+            color: #000000;
+        }
+
+        .media video {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="back-button" href="javascript:history.back()">Back</a>
+    <header>
+        <h1>Photo and Video Studio</h1>
+    </header>
+
+    <nav>
+        <!-- <a href="#">Home</a>
+        <a href="#">Portfolio</a> -->
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+
+    <div class="content">
+        <div class="media">
+            <img class="media-item" src="./pic&vid/1.JPG" alt="Photo 1">
+            <div class="media-title">Bike Stunt</div>
+        </div>
+        <div class="media">
+            <img class="media-item" src="./pic&vid/2.JPG" alt="Photo 2">
+            <div class="media-title">Pose 1</div>
+        </div>
+        <div class="media">
+            <video class="media-item" controls autoplay>
+                <source src="./pic&vid/vid2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="media-title">Stunt Video</div>
+        </div>
+        <div class="media">
+            <img class="media-item" src="./pic&vid/3.JPG" alt="Photo 3">
+            <div class="media-title">Bike Pose</div>
+        </div>
+        <div class="media">
+            <img class="media-item" src="./pic&vid/4.JPG" alt="Photo 4">
+            <div class="media-title">Pose 2</div>
+        </div>
+        <div class="media">
+            <img class="media-item" src="./pic&vid/5.JPG" alt="Photo 5">
+            <div class="media-title">Pose 3</div>
+        </div>
+        
+        <!-- Add more photos and videos as needed -->
+    </div>
+</body>
+
+</html>
